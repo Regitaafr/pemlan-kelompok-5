@@ -26,44 +26,44 @@ main ()
   		printf("4. Aritmatika Sosial\n");
   		printf("5. Segiempat\n");
   		printf("6. Segitiga\n");
-		printf("7. Trapesium\n");
+		  printf("7. Trapesium\n");
   		printf("8. Penyajian Data\n");
   		printf("Materi yang dipilih: ");
-  		scanf("%d" , &bil);  		
+  		scanf("%d" , &bil);
   	}
-		if(bil==4){
-			printf("================================\n");
-			printf("Program Menghitung Laba dan Rugi\n");
-			printf("================================\n");
-			printf("Masukkan Modal : Rp ");
-			scanf("%d",&modal);
-			printf("Masukkan Pendapatan : Rp ");
-			scanf("%d",&hasil);
-			
-			if (hasil > modal){
-				laba = hasil-modal;
-				printf("Mendapatkan laba sebesar = Rp %d", laba);
-			}
-			else if (hasil < modal){
-				rugi = hasil-modal;
-				printf("Mendapatkan rugi sebesar = Rp %d", rugi);
-			}
-			else{
-				printf("Tidak ada laba dan rugi yang diperoleh");
-			}
-		}
-		else if (bil==7){
-			printf("==============================\n");
-			printf("Menghitung Luas Trapesium \n");
-			printf("==============================\n");
-			
-			printf("Masukkan Jumlah Sisi Sejajar : ");
-			scanf("%d",&st);
-			printf("Masukkan Tinggi : ");
-			scanf("%d",&tt);
-			luast=0.5*st*tt;
-			printf("Luas Trapesium = %f",luast);
-			printf(" cm");
-		}
+      if(bil==4){
+        printf("================================\n");
+        printf("Program Menghitung Laba dan Rugi\n");
+        printf("================================\n");
+        printf("Masukkan Modal : Rp ");
+        scanf("%d",&modal);
+        printf("Masukkan Pendapatan : Rp ");
+        scanf("%d",&hasil);
+
+        if (hasil > modal){
+          laba = hasil-modal;
+          printf("Mendapatkan laba sebesar = Rp %d", laba);
+        }
+        else if (hasil < modal){
+          rugi = hasil-modal;
+          printf("Mendapatkan rugi sebesar = Rp %d", rugi);
+        }
+        else{
+          printf("Tidak ada laba dan rugi yang diperoleh");
+        }
+      }
+      else if (bil==7){
+        printf("==============================\n");
+        printf("Menghitung Luas Trapesium \n");
+        printf("==============================\n");
+
+        printf("Masukkan Jumlah Sisi Sejajar : ");
+        scanf("%d",&st);
+        printf("Masukkan Tinggi : ");
+        scanf("%d",&tt);
+        luast=0.5*st*tt;
+        printf("Luas Trapesium = %f",luast);
+        printf(" cm");
+      }
   	
 }
