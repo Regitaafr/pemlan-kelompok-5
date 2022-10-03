@@ -4,7 +4,7 @@ main ()
 {
 	int bil;
 	int modal, hasil, laba, rugi;
-	int st,tt;
+	int st,tt,s1,s2,s3,s4,kelilingt;
 	float luast;
 
 	printf("\n-----------------------\n");
@@ -54,16 +54,30 @@ main ()
       }
       else if (bil==7){
         printf("==============================\n");
-        printf("Menghitung Luas Trapesium \n");
+        printf("Menghitung Bangun Datar Trapesium \n");
         printf("==============================\n");
-
-        printf("Masukkan Jumlah Sisi Sejajar : ");
-        scanf("%d",&st);
-        printf("Masukkan Tinggi : ");
-        scanf("%d",&tt);
-        luast=0.5*st*tt;
-        printf("Luas Trapesium = %f",luast);
+	printf("1. Luas Trapesium\n");
+	printf("Masukkan Jumlah Sisi Sejajar : ");
+	scanf("%d",&st);
+	printf("Masukkan Tinggi : ");
+	scanf("%d",&tt);
+	luast=0.5*st*tt;
+	printf("Luas Trapesium = %f",luast);
+	printf(" cm");
+	printf("\n");
+	    
+	printf("\n");
+	printf("2. Keliling Trapesium \n");
+      	printf("Masukkan panjang Sisi 1 : ");
+        scanf("%d",&s1);
+        printf("Masukkan panjang Sisi 2 : ");
+        scanf("%d",&s2);
+        printf("Masukkan panjang Sisi 3 : ");
+        scanf("%d",&s3);
+        printf("Masukkan panjang Sisi 4 : ");
+        scanf("%d",&s4);
+        kelilingt=s1+s2+s3+s4;
+        printf("Keliling Trapesium = %d",kelilingt);
         printf(" cm");
-      }
-  	
+	}
 }
