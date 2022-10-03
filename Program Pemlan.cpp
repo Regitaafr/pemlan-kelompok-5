@@ -27,7 +27,7 @@ main ()
   		printf("8. Penyajian Data\n");
   		printf("Materi yang dipilih: ");
   		scanf("%d" , &bil);
-  		 nbn
+  		 nbnn
   	}
   	
 }
