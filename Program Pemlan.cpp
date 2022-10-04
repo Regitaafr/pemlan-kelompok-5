@@ -2,7 +2,9 @@
 #include <stdlib.h>
 main ()
 {
-	int bil;
+	int bil, s, luass, kelilings;
+	int a;
+	float angka;
 	int modal, hasil, laba, rugi;
 	int st,tt,s1,s2,s3,s4,kelilingt;
 	float luast;
@@ -26,10 +28,24 @@ main ()
   		printf("4. Aritmatika Sosial\n");
   		printf("5. Segiempat\n");
   		printf("6. Segitiga\n");
-		  printf("7. Trapesium\n");
+		printf("7. Trapesium\n");
   		printf("8. Penyajian Data\n");
   		printf("Materi yang dipilih: ");
   		scanf("%d" , &bil);
+		if (bil == 1) {
+		printf("================================\n");
+  		printf("Menentuka bilangan bulat dan pecahan\n");
+		printf("================================\n");
+  		printf("Masukkan bilangan: ");
+  		scanf("%f", &angka);
+  		a=angka;
+  		if (angka == a) {
+  		 printf("Bilangan bulat");
+		}
+		else {
+			printf("Bilangan Pecahan");
+			   }
+  		 }
   	}
       if(bil==4){
         printf("================================\n");
@@ -79,5 +95,17 @@ main ()
         kelilingt=s1+s2+s3+s4;
         printf("Keliling Trapesium = %d",kelilingt);
         printf(" cm");
+	}
+	
+	else if (bil == 5) {
+	printf("================================\n");
+       	printf("Menghitung luas segiempat\n");
+	printf("================================\n");
+   	printf("Masukan sisi segiempat: ");
+   	scanf("%d", &s);
+   	luass=s*2;
+   	kelilings=s*4;
+   	printf("Luas segiempat= %d \n", luass);
+   	printf("Keliling segiempat= %d", kelilings);
 	}
 }
