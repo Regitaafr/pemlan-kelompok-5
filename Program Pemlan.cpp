@@ -68,6 +68,19 @@ main ()
           printf("Tidak ada laba dan rugi yang diperoleh");
         }
       }
+	
+	else if (bil == 5) {
+	printf("================================\n");
+       	printf("Menghitung luas segiempat\n");
+	printf("================================\n");
+   	printf("Masukan sisi segiempat: ");
+   	scanf("%d", &s);
+   	luass=s*2;
+   	kelilings=s*4;
+   	printf("Luas segiempat= %d \n", luass);
+   	printf("Keliling segiempat= %d", kelilings);
+	}
+	
       else if (bil==7){
         printf("==============================\n");
         printf("Menghitung Bangun Datar Trapesium \n");
@@ -97,15 +110,4 @@ main ()
         printf(" cm");
 	}
 	
-	else if (bil == 5) {
-	printf("================================\n");
-       	printf("Menghitung luas segiempat\n");
-	printf("================================\n");
-   	printf("Masukan sisi segiempat: ");
-   	scanf("%d", &s);
-   	luass=s*2;
-   	kelilings=s*4;
-   	printf("Luas segiempat= %d \n", luass);
-   	printf("Keliling segiempat= %d", kelilings);
-	}
 }
