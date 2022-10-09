@@ -14,6 +14,7 @@ main ()
 	int aw, be, n,to;
 	float awal,r,rn,sn,s;
 	float rk,kk,rl,kl;
+	float sisikbs, volume;
 	
 	printf("\n-----------------------\n");
   	printf("\n 1.Materi Kelas VII\n");
@@ -87,7 +88,7 @@ main ()
 	   	printf("Keliling segiempat= %d", kelilings);
 		}
 		
-		else if (bil == 6) {
+		else if (pil == 6) {
 		printf("===========================================\n");
 		printf("Menghitung Keliling dan Luas Segitiga\n");
 		printf("===========================================\n");
@@ -239,4 +240,16 @@ main ()
 		kl = phi*rl*rl;
 		printf("Luas Lingkaran = %.2f\n",kl);
 			}
+		
+		else if(opsi==6){
+			printf("========================================\n");
+			printf("Program Menghitung Volume Kubus\n");
+  			printf("========================================\n");
+ 		printf("Masukkan nilai dari ketiga sisi kubus : ");
+ 		scanf("%f", &sisikbs);
+  		volume = sisikbs * sisikbs * sisikbs;
+  		printf("---------------------------------------\n");
+  		printf("Volume kubus adalah %.2f", volume);
+  		printf("\n\n\n");
+		}
 }
