@@ -4,10 +4,14 @@ main ()
 {
 	int bil, s, luass, kelilings;
 	int a;
+	int alas,tinggi,sisi1,sisi2,sisi3,luasss,kelilingss;
 	float angka;
 	int modal, hasil, laba, rugi;
 	int st,tt,s1,s2,s3,s4,kelilingt;
 	float luast;
+	int i, banyak, data[20];
+	float average, jumlah;
+
 
 	printf("\n-----------------------\n");
   	printf("\n 1.Materi Kelas VII\n");
@@ -81,6 +85,26 @@ main ()
    	printf("Keliling segiempat= %d", kelilings);
 	}
 	
+	else if (bil == 6) {
+	printf("===========================================\n");
+		printf("Menghitung Keliling dan Luas Segitiga\n");
+	printf("===========================================\n");
+	printf("Masukkan Alas :");
+	scanf("%d", &alas);
+	printf("Masukkan Tinggi :");
+	scanf("%d", &tinggi);
+	printf("Sisi 1 :");
+	scanf("%d", &sisi1);
+	printf("Sisi 2 :");
+	scanf("%d", &sisi2);
+	printf("Sisi 3 :");
+	scanf("%d", &sisi3);
+	luasss=(alas*tinggi)/2;
+	kelilingss=sisi1+sisi2+sisi3;
+	printf("Luas Segitiga =%d \n", luasss);
+	printf("Keliling Segitiga =%d ", kelilingss);
+	}
+	
       else if (bil==7){
         printf("==============================\n");
         printf("Menghitung Bangun Datar Trapesium \n");
@@ -108,6 +132,24 @@ main ()
         kelilingt=s1+s2+s3+s4;
         printf("Keliling Trapesium = %d",kelilingt);
         printf(" cm");
+	}
+	
+	else if (bil == 8){
+		printf("=====================================\n");
+		printf("Program C Menghitung Nilai Rata-rata\n");
+  		printf("=====================================\n");
+  	printf("Masukkan banyak data yang akan dihitung: ");
+ 	scanf("%d", &banyak);
+  	for (i = 0; i < banyak; i++) {
+   	printf("Data ke-%d : ", i+1);
+   	scanf("%d", &data[i]);
+    	jumlah += data[i];
+ 	 }
+  
+  	average = jumlah / banyak;
+  	printf("------------------------------------\n");
+  	printf("Jumlah dari data adalah %.0f\n", jumlah);
+  	printf("Rata-rata yang didapatkan yaitu %.2f\n\n\n", average);
 	}
 	
 }
