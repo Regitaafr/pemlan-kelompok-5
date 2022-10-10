@@ -15,6 +15,7 @@ main ()
 	float awal,r,rn,sn,s;
 	float rk,kk,rl,kl;
 	float sisikbs, volume;
+	int m, c, x, y;
 	
 	printf("\n-----------------------\n");
   	printf("\n 1.Materi Kelas VII\n");
@@ -220,6 +221,23 @@ main ()
 		printf("Jumlah deret %d suku =%f\n",n,sn);
 		}
 	
+		if(opsi==3){
+		printf("========================================\n");
+		printf("Program Menghitung Persamaan Garis Lurus\n");
+		printf("========================================\n");
+		printf("Perhitungan ini menggunakan rumus y=m*x+c\n");
+		printf("Masukkan Nilai m:");
+ 		scanf("%d", &m);
+ 		printf("Masukkan Nilai c:");
+ 		scanf("%d", &c);
+ 		printf("Masukkan Nilai x:");
+ 		scanf("%d", &x);
+
+ 		printf("Nilai y untuk x=%d pada persamaan y = %dx + %d adalah %d", x, m, c, y);
+ 		return 0;
+			}
+	
+	
 		else if(opsi==5){
 		float phi = 3.14;
 		printf("==============================================\n");
@@ -242,9 +260,9 @@ main ()
 			}
 		
 		else if(opsi==6){
-			printf("========================================\n");
-			printf("Program Menghitung Volume Kubus\n");
-  			printf("========================================\n");
+		printf("========================================\n");
+		printf("Program Menghitung Volume Kubus\n");
+  		printf("========================================\n");
  		printf("Masukkan nilai dari ketiga sisi kubus : ");
  		scanf("%f", &sisikbs);
   		volume = sisikbs * sisikbs * sisikbs;
