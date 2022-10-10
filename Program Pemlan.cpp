@@ -16,6 +16,7 @@ main ()
 	float rk,kk,rl,kl;
 	float sisikbs, volume;
 	int m, c, x, y;
+	float x, y;
 	
 	printf("\n-----------------------\n");
   	printf("\n 1.Materi Kelas VII\n");
@@ -219,6 +220,27 @@ main ()
 			sn=(awal*(1-rn))/(1-r);
 
 		printf("Jumlah deret %d suku =%f\n",n,sn);
+		}
+	
+		if(opsi==2) {
+		printf("Menentukan Posisi Suatu Titik Pada Koordinat Cartesius\n");
+		printf("Masukkan Nilai x: ");
+		scanf("%f",&x);
+		printf("Masukkan Nilai y:");
+		scanf("%f",&y);
+		printf("Poisi Titik Berada di ");
+		if(x >= 0 && y >= 0) {
+		printf("Kuadran 1");
+		}
+		if(x < 0 && y >= 0) {
+		printf("Kuadran 2");
+		}
+		if(x < 0 && y < 0) {
+		printf("Kuadran 3");
+		}
+		else if(x >= 0 && y < 0) {
+		printf("Kuadran 4");
+		}
 		}
 	
 		if(opsi==3){
