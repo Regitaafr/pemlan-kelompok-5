@@ -444,3 +444,56 @@ main ()
   printf("Bye-Bye \n");
   return 0;
 }
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(){
+
+  int menu;
+  float a,b,c;
+
+  while(1) {
+
+    printf("------- Pilih sisi yang anda ingin cari di Pythagoras -------\n");
+    printf("1. Sisi miring (c) \n");
+    printf("2. Sisi alas (a) \n");
+    printf("3. Sisi tegak (b) \n");
+    printf("4. Exit \n");
+    printf("------------------------------\n");
+
+    printf("Pilih nomor menu: ");
+    scanf("%d",&menu);
+    fflush(stdin);
+
+    if(menu == 1){
+      printf("Input nilai a: ");
+      scanf("%f", &a);
+      printf("Input nilai b: ");
+      scanf("%f", &b);
+      c=sqrt((a*a)+(b*b));
+      printf("Sisi miringnya adalah %.2f\n", c);
+    } else if (menu == 2){
+      printf("Input nilai b: ");
+      scanf("%f",&b);
+      printf("Input nilai c: ");
+      scanf("%f",&c);
+      a=sqrt((c*c)-(b*b));
+      printf("Sisi alasnya adalah %.2f\n",a);
+    } else if (menu == 3){
+      printf("Input nilai a: ");
+      scanf("%f", &a);
+      printf("Input nilai c: ");
+      scanf("%f", &c);
+      b=sqrt((c*c)-(a*a));
+      printf("Sisi tegaknya adalah %.2f\n",b);
+    } else if(menu == 4){
+      exit(0);
+    } else {
+      printf("Menu yang anda input salah");
+    }
+  }
+  return 0;
+}
+
