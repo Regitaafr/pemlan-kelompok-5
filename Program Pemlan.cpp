@@ -495,5 +495,64 @@ int main(){
     }
   }
   return 0;
+}#include<stdio.h>
+#include<stdlib.h>
+#include<conio.h>
+
+int main () {
+    int n,a,b,temp=0,q1,q2;
+    float median;
+    printf("\t\t\tPROGRAM STATISTIKA\n\n");
+    //input jumlah data
+    printf("imput jumlah data: "); scanf("%d",&n);fflush(stdin);
+    //input data
+    int data[n],frekuensi[n],modus,max=-1000,sum=0;
+    float mean;
+   
+    for(a=0;a<n;a++){
+                     printf("masukkan nilai data ke-%d <0..9>: ",a+1);scanf("%d",&data[a]);
+                     sum=sum+data[a];
+                     }
+                    
+    printf("\n\n");
+   
+     //median atau nilai tengah dari suatu data
+    for(a=0;a<(n-1);a++){
+                         for(b=a;b<n;b++){
+                         if(data[b]<data[a]){
+                                               temp=data[a];
+                                               data[a]=data[b];
+                                               data[b]=temp; };                   
+                                               };
+                                               }
+    printf("\ndata di urutkan: ");
+    for(a=0;a<n;a++){
+                     printf("%d,",data[a]);}
+    if(n%2==1){q2=(n/2);
+                        median=data[q2];
+                        printf("median/nilai tengah adalah: %.2f",median);}
+    else if(n%2==0){q1=(n/2)-1; q2=(n/2);
+                    median=((float)data[q1]+(float)data[q2])/2;
+                    printf("\nmedian adalah: %.2f",median);}
+   
+    printf("\n");
+   
+    
+    //rata-rata bilangan atau average
+    mean=(float)sum/n;
+    printf("mean adalah: %.2f\n",mean);
+    //mencari modus atau data yang sering muncul
+    for(a=0;a<10;a++){frekuensi[a]=0;
+                      for(b=0;b<n;b++){
+                                       if(data[b]==a){frekuensi[a]=frekuensi[a]+1;};
+                                       }
+                      if(frekuensi[a]>max) {max=frekuensi[a];modus=a;}
+                      };
+                      
+    printf("modus adalah: %d\n\n",modus);
+    
+    system("pause");
+    return 0;
 }
+
 
